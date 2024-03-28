@@ -13,7 +13,51 @@
     />
     <title>⛅ My Weather Application</title>
   </head>
+
   <body>
+    <header class="header-container">
+      <form>
+        <input
+          class="input"
+          type="search"
+          placeholder="Enter a city.."
+          required
+        />
+        <input class="search" type="submit" value="Search" />
+      </form>
+    </header>
+
+    <main class="main-container">
+      <div class="current-city-container">
+        <h1 class="current-city">Paris</h1>
+        <p class="current-date-and-description">
+          Tuesday 14:49, scattered clouds
+          <br />
+          Humidity: 66%, Wind: 3.13km/h
+        </p>
+      </div>
+      <div class="current-weather-container">🌤️ 12°C</div>
+    </main>
+
+    <div class="footer-container">
+      <footer>
+        This project was coded by
+        <a href="https://github.com/MalieKapDev" target="_blank">
+          Malie Kapelianis</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/MalieKapDev/my-weather-app-v1"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and hosted on
+        <a href="https://weather-app-maliekapdev.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </footer>
+    </div>
+
     <script src="src\script.js"></script>
   </body>
 </html>

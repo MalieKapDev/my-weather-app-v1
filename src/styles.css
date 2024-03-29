@@ -118,9 +118,11 @@ main {
 #humidity-container,
 #wind-container {
   border: 1px solid var(--primary-purple);
+  background-image: radial-gradient(transparent 55%, var(--primary-purple));
   border-radius: 5px;
   margin: 5px auto;
   width: 130px;
+  text-align: center;
 }
 
 #humidity-container,

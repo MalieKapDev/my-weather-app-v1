@@ -113,8 +113,28 @@ main {
   font-weight: 500;
 }
 
+.date-container,
+#description,
+#humidity-container,
+#wind-container {
+  border: 1px solid var(--primary-purple);
+  border-radius: 5px;
+  margin: 5px auto;
+  width: 130px;
+}
+
+#humidity-container,
+#wind-container {
+  display: inline-flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: 6px;
+  width: 125px;
+}
+
 .weather-app-details strong {
   color: var(--light-purple);
+  padding-left: 5px;
 }
 
 .weather-app-temperature-container {
@@ -125,6 +145,7 @@ main {
 .weather-app-icon {
   display: inline;
   font-size: 88px;
+  margin-bottom: -20px;
 }
 
 .weather-app-temperature {

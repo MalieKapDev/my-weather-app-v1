@@ -94,8 +94,8 @@ main {
 }
 
 .weather-app-data {
-  display: block;
-  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .weather-app-city {
@@ -107,31 +107,16 @@ main {
 
 .weather-app-details {
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   color: var(--light-black);
   line-height: 24px;
   font-weight: 500;
-}
-
-.date-container,
-#description,
-#humidity-container,
-#wind-container {
-  border: 1px solid var(--primary-purple);
-  background-image: radial-gradient(transparent 55%, var(--primary-purple));
-  border-radius: 5px;
-  margin: 5px auto;
-  width: 130px;
-  text-align: center;
-}
-
-#humidity-container,
-#wind-container {
   display: inline-flex;
-  flex-direction: row;
-  text-align: center;
-  padding-left: 6px;
-  width: 125px;
+  flex-direction: column;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  padding: 25px;
 }
 
 .weather-app-details strong {
@@ -140,14 +125,20 @@ main {
 }
 
 .weather-app-temperature-container {
-  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
   text-align: center;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  width: 280px;
+  padding: 0 25px 25px 25px;
 }
 
 .weather-app-icon {
-  display: inline;
-  font-size: 88px;
-  margin-bottom: -20px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 }
 
 .weather-app-temperature {
@@ -156,7 +147,12 @@ main {
 }
 
 .weather-app-unit {
+  margin-top: 6px;
   font-size: 28px;
+}
+
+#description {
+  color: var(--light-black);
 }
 
 footer {

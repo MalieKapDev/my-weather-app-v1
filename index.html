@@ -21,7 +21,7 @@
         <form class="search-form" id="search-form">
           <input
             type="search"
-            placeholder="Enter a city.."
+            placeholder="Search for a city..."
             required
             class="search-form-input"
             id="search-form-input"
@@ -31,32 +31,26 @@
       </header>
       <main>
         <div class="weather-app-data">
-          <div>
-            <h1 class="weather-app-city" id="city"></h1>
-            <div class="weather-app-temperature-container">
-              <div class="weather-app-icon" id="icon"></div>
+          <span class="weather-app-temperature-container">
+            <div class="weather-app-icon" id="icon"></div>
+            <div class="weather-app-temperature-combiner">
               <span class="weather-app-temperature" id="temperature"></span>
               <span class="weather-app-unit">°C</span>
             </div>
-            <div class="weather-app-details">
-              <span
-                ><div class="date-container" id="time"></div>
-                <div id="description"></div>
-              </span>
-              <div class="weather-app-details">
-                <span id="humidity-container"
-                  >Humidity: <strong id="humidity"><br /></strong
-                ></span>
-                <br />
-                <span id="wind-container" class="weather-app-details">
-                  Wind: <strong id="wind-speed"><br /></strong>
-                </span>
-              </div>
+            <div><h1 class="weather-app-city" id="city"></h1></div>
+            <div id="description"></div>
+          </span>
+          <span class="weather-app-details">
+            <div class="date-container" id="time"></div>
+            <div id="humidity-container">
+              Humidity: <strong id="humidity"></strong>
             </div>
-          </div>
+            <div id="wind-container">
+              Wind: <strong id="wind-speed"></strong>
+            </div>
+          </span>
         </div>
       </main>
-
       <div class="footer-container">
         <footer>
           This project was coded by
